@@ -1,0 +1,84 @@
+main {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.card {
+  margin: 2rem 0;
+}
+
+.card > a {
+  display: grid;
+  grid-template-columns: 24px 2fr 24px;
+  gap: 1rem;
+  align-items: center;
+  padding: 2em;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card > a:hover,
+.card > a:focus,
+.card > a:active {
+  border-color: #f2f2f2;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+}
+
+.card .icon-arrow {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .icon-arrow {
+  opacity: 1;
+}
+
+.card svg:not(.icon-arrow) {
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.links > a {
+  color: #335bf1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links > a:hover,
+.links > a:focus,
+.links > a:active {
+  position: relative;
+  border-bottom: 2px solid #335bf1;
+}
+
+.links > a:hover::after,
+.links > a:focus::after,
+.links > a:active::after {
+  position: absolute;
+  right: -25px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%23335bf1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-external-link'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3'/%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
