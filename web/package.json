@@ -13,6 +13,8 @@
     ]
   },
   "dependencies": {
+    "@clerk/clerk-react": "^2.11.1",
+    "@redwoodjs/auth": "0.46.1",
     "@redwoodjs/forms": "0.46.1",
     "@redwoodjs/router": "0.46.1",
     "@redwoodjs/web": "0.46.1",
