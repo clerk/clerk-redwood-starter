@@ -1,0 +1,65 @@
+#redwood-app {
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 55px;
+  padding: 1rem 2rem;
+  background-color: #e4e4e4;
+}
+
+header > a {
+  color: #606060;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+header a:hover,
+header a:focus,
+header a:active {
+  border-bottom-color: #606060;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+nav button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+nav button:hover,
+nav button:focus,
+nav button:active {
+  border-bottom-color: #606060;
+}
+
+main {
+  height: 100%;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+/* Clerk overrides */
+.cl-modal-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border-radius: 0 !important;
+}
