@@ -1,8 +1,18 @@
-main {
+.home {
+  display: flex;
+  flex-flow: column nowrap;
   max-width: 550px;
+  height: 100%;
   margin: 0 auto;
-  padding-top: 5rem;
-  text-align: center;
+  padding-top: 2rem;
+}
+
+.home h1 {
+  margin: 0;
+}
+
+.home p {
+  color: #808080;
 }
 
 .card {
@@ -12,7 +22,7 @@ main {
 .card > a {
   display: grid;
   grid-template-columns: 24px 2fr 24px;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   padding: 2em;
   border: 2px solid #fff;
@@ -51,6 +61,8 @@ main {
 .links {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   padding-top: 2rem;
 }
@@ -81,4 +93,29 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 1.5rem;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  margin: 0 0.5rem;
+  transition: transform 0.15s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  transform: translateY(-0.5rem);
+}
+
+.footer img {
+  max-height: 24px;
 }
