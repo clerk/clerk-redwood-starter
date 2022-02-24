@@ -1,27 +1,17 @@
-# Redwood
+# Clerk + Redwood Starter
 
-> **NOTICE:** RedwoodJS is very close to a stable version 1.0. In the last two years,
-> the project has matured significantly and is already used in production by a number
-> of startups. We intend to have a 1.0 release candidate before the end of 2021 and
-> to release a truly production-ready 1.0 in early 2022.
+This example shows how to use [Clerk](https://clerk.dev?utm_source=github&utm_medium=starter_repos&utm_campaign=redwoodjs_starter) with RedwoodJS. The example application features sign up, sign in, and profile management.
 
-## Getting Started
-- [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
-- [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
+## Running the starter
 
-### Setup
+To run the example locally you need to:
 
-We use Yarn as our package manager. To get the dependencies installed, just do this in the root directory:
+1. Sign up for a Clerk account at https://clerk.dev.
+2. Follow the [integration instructions](https://docs.clerk.dev/get-started/redwoodjs) for RedwoodJS.
+3. Set the required Clerk environment variables as shown in [the example env file](./.env.example).
+4. `yarn install` the required dependencies.
+5. `yarn redwood dev` and you are good to go.
 
-```terminal
-yarn install
-```
+## Contact
 
-### Fire it up
-
-```terminal
-yarn redwood dev
-```
-
-Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
+If you need support or have anything you would like to ask, please reach out in our [Discord channel](https://discord.com/invite/b5rXHjAg7A). We'd love to chat!
