@@ -1,4 +1,5 @@
 import { UserButton } from '@clerk/clerk-react'
+
 import { useAuth } from '@redwoodjs/auth'
 import { Link, routes } from '@redwoodjs/router'
 
@@ -9,7 +10,7 @@ type StandardLayoutProps = {
 }
 
 const StandardLayout = ({ children }: StandardLayoutProps) => {
-  const { isAuthenticated, logIn } = useAuth()
+  const { isAuthenticated } = useAuth()
 
   return (
     <>
@@ -19,9 +20,9 @@ const StandardLayout = ({ children }: StandardLayoutProps) => {
           <ul>
             <li>
               {isAuthenticated ? (
-                <UserButton afterSignOutAll={window.location.href} />
+                <UserButton afterSignOutUrl={window.location.href} />
               ) : (
-                <button onClick={logIn}>Sign in</button>
+                <Link to={routes.signIn()}>Sign in</Link>
               )}
             </li>
           </ul>

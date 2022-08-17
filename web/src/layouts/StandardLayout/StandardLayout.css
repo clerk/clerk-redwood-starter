@@ -34,20 +34,21 @@ nav > ul {
   list-style: none;
 }
 
-nav button {
-  padding: 0;
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+nav a {
+  border: 2px solid #606060;
+  border-radius: 4px;
+  padding: 4px 16px;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-nav button:hover,
-nav button:focus,
-nav button:active {
-  border-bottom-color: #606060;
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: #fefefe;
 }
 
 main {

@@ -1,5 +1,6 @@
-import { AuthProvider } from '@redwoodjs/auth'
 import { ClerkProvider, withClerk } from '@clerk/clerk-react'
+
+import { AuthProvider } from '@redwoodjs/auth'
 import { FatalErrorBoundary, RedwoodProvider } from '@redwoodjs/web'
 import { RedwoodApolloProvider } from '@redwoodjs/web/apollo'
 
@@ -32,7 +33,14 @@ const ClerkAuthProvider = ({ children }) => {
   }
 
   return (
-    <ClerkProvider frontendApi={frontendApi}>
+    <ClerkProvider
+      frontendApi={frontendApi}
+      appearance={{
+        variables: {
+          colorPrimary: '#bf4723',
+        },
+      }}
+    >
       <ClerkAuthConsumer>{children}</ClerkAuthConsumer>
     </ClerkProvider>
   )
