@@ -3,11 +3,11 @@
   "workspaces": {
     "packages": [
       "api",
-      "web",
-      "packages/*"
+      "web"
     ]
   },
   "devDependencies": {
+    "@redwoodjs/auth-clerk-setup": "4.0.1",
     "@redwoodjs/core": "4.0.1"
   },
   "eslintConfig": {

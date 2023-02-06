@@ -1,6 +1,6 @@
 import gql from 'graphql-tag'
 
-import { createValidatorDirective } from '@redwoodjs/graphql-server'
+import {createValidatorDirective, ValidatorDirectiveFunc} from '@redwoodjs/graphql-server'
 
 import { requireAuth as applicationRequireAuth } from 'src/lib/auth'
 
@@ -12,7 +12,9 @@ export const schema = gql`
   directive @requireAuth(roles: [String]) on FIELD_DEFINITION
 `
 
-const validate = ({ directiveArgs }) => {
+type RequireAuthValidate = ValidatorDirectiveFunc<{ roles?: string[] }>
+
+const validate: RequireAuthValidate = ({ directiveArgs }) => {
   const { roles } = directiveArgs
   applicationRequireAuth({ roles })
 }

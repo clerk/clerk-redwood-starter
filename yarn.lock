@@ -1356,12 +1356,12 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@clerk/backend@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-0.5.0.tgz#58bf27512905ad6951faab455644a302613c7c71"
-  integrity sha512-UiPIS21YWdxZqHl5fkC3i3XAdvamuuRUWig4QY/sto+RbJ0DMPkDFEtuAWw/YPi2bMbgNazS/VFhhLW8qGchdQ==
+"@clerk/backend@^0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@clerk/backend/-/backend-0.4.5.tgz#aeb4733adf9b4ee39c527e698fd4f6c7ba812ed8"
+  integrity sha512-MylDchIb6rWJCG6VfLv8k4RH+Pf1P0pJnYW0Sizpklkql52lqr4Wgm/y2gx0hPfMr89tbWyIyfF7mX00RyORHQ==
   dependencies:
-    "@clerk/types" "^3.25.0"
+    "@clerk/types" "^3.24.1"
     "@peculiar/webcrypto" "1.4.1"
     "@types/node" "16.18.6"
     deepmerge "4.2.2"
@@ -1370,23 +1370,23 @@
     snakecase-keys "5.4.4"
     tslib "2.4.1"
 
-"@clerk/clerk-react@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@clerk/clerk-react/-/clerk-react-4.9.0.tgz#b92f74c04b3af7e4fafd8463e1344633f32dbb0b"
-  integrity sha512-PlQnaBfDmBK5ZiLwaJ7QSUDeQaj7mlfn3zDCr497ZQVzWaFApMPju5E3hCsn2sE37kaMrMQkRcnvp3Lm7B10fw==
+"@clerk/clerk-react@^4":
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@clerk/clerk-react/-/clerk-react-4.10.0.tgz#71a8c97ed46003bd23167a1c9fa47e6bc83893c7"
+  integrity sha512-r/jw4Td2/AHGiojWii5kotb3lQlvGaurFO1QbtXXjeDwHt7qRvbiANQ5pDgqMd4JgasLEhL3kPpQ46/Ti4Okwg==
   dependencies:
-    "@clerk/shared" "^0.9.3"
-    "@clerk/types" "^3.25.0"
+    "@clerk/shared" "^0.10.0"
+    "@clerk/types" "^3.25.1"
     swr "1.3.0"
     tslib "2.4.1"
 
-"@clerk/clerk-sdk-node@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@clerk/clerk-sdk-node/-/clerk-sdk-node-4.6.4.tgz#d212d0ce79401cb06ae03dc04699401cabf7b641"
-  integrity sha512-p0WnRxLA6RttLO24NiLKg8phGCJmA47mN5tQNV7z0TXYR17pFj6LnV7CI+/Mf9M1PK3d4ryGyJYWpGR3ULX8Ow==
+"@clerk/clerk-sdk-node@4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@clerk/clerk-sdk-node/-/clerk-sdk-node-4.6.5.tgz#41fc58e19edb88f5755453d57b2b8bc844342749"
+  integrity sha512-3KohwMBGBJm7WrgG3hLExgbrIsZq4yKSEJaSDE/No524Cj3P+V9ruvAV0nPQY1iAnAfN+Vz+depNL+bYnSp+gg==
   dependencies:
-    "@clerk/backend" "^0.5.0"
-    "@clerk/types" "^3.25.0"
+    "@clerk/backend" "^0.4.5"
+    "@clerk/types" "^3.24.1"
     "@types/cookies" "0.7.7"
     "@types/express" "4.17.14"
     "@types/jsonwebtoken" "8.5.9"
@@ -1396,15 +1396,15 @@
     snakecase-keys "3.2.1"
     tslib "2.4.1"
 
-"@clerk/shared@^0.9.3":
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/@clerk/shared/-/shared-0.9.3.tgz#2c31c5874d7b43db073c50cf5c22b49ec7d2e229"
-  integrity sha512-V+Cmd3c9dXTkvCa9lkoTYzmJF6gvgicGBMHKwgtiNj7rSH8CyWigOswT9LT0FAwdicdenDaNMulvEU7J2ra8rQ==
+"@clerk/shared@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@clerk/shared/-/shared-0.10.0.tgz#dfb1c2771f2246b29114d5e760e75675bb0aa4c9"
+  integrity sha512-D61w65vaGcknlW+A37wc8GZqymXY7iBDJOS6xfNMtObnaiLlI8e47Rso+rS+Z93DbxzlSKM3roSNsOiVU3ei2g==
 
-"@clerk/types@^3.25.0":
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/@clerk/types/-/types-3.25.0.tgz#01341e8addfc37f9d2e7b7e8139420d8da6f8935"
-  integrity sha512-smT9UoS+JEkvGPRF4P4YraJoWIfJ7u0CjL7lzGgwcm7Vyyx07oRys51m4rxMIDgqX7I+J8qGu7G8H8rXtAt+sw==
+"@clerk/types@^3.24.1", "@clerk/types@^3.25.1":
+  version "3.25.1"
+  resolved "https://registry.yarnpkg.com/@clerk/types/-/types-3.25.1.tgz#d444057031170e78aebde947004fcec723b7a986"
+  integrity sha512-g6diw/CYBzzzYxFYMl4sPGGNKOY1N0/qUeqj7PEQT9QasCv6aTKvhBq4YQohMKZ+1mR2Di0bdxVDlKYXDVRxhg==
   dependencies:
     csstype "3.1.1"
 
@@ -3067,7 +3067,34 @@
     pino "8.8.0"
     title-case "3.0.3"
 
-"@redwoodjs/auth@4.0.1", "@redwoodjs/auth@^4.0.1":
+"@redwoodjs/auth-clerk-api@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-clerk-api/-/auth-clerk-api-4.0.1.tgz#267d17e03043e13d637a0f16131a8539c53ca8b7"
+  integrity sha512-/QEUEmBUJwWMjfQfi4vYviu8tDXlZzy2WWQlAWSRCCeltRTBZ0LDjqezpHtBB3BKe9CuvzSAFqO+z6ImMkCIEw==
+  dependencies:
+    "@babel/runtime-corejs3" "7.20.13"
+    "@clerk/clerk-sdk-node" "4.6.5"
+    core-js "3.27.2"
+
+"@redwoodjs/auth-clerk-setup@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-clerk-setup/-/auth-clerk-setup-4.0.1.tgz#39193a8a64e0daec881faa67eb9b85417cb6fb92"
+  integrity sha512-yQrZcNoDu751i0g1TeukLwhdOHepIpRsNt8BVn3/mQO+zvAe5LhR1A3gAZQiXMNkv+bRBKseWD4l9XhzpT+Wdw==
+  dependencies:
+    "@babel/runtime-corejs3" "7.20.13"
+    "@redwoodjs/cli-helpers" "4.0.1"
+    core-js "3.27.2"
+
+"@redwoodjs/auth-clerk-web@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth-clerk-web/-/auth-clerk-web-4.0.1.tgz#902decc44a640502c7fe45bdcfee04a279544429"
+  integrity sha512-6kQ9hVwjOyX7LPpH7en7xkWe4GNAfGGJj8URPBwJo+y2YdXO6/Dz/NbiA6ehm+/Pc2j7W6e5MK9/DRXE/Sr1ZA==
+  dependencies:
+    "@babel/runtime-corejs3" "7.20.13"
+    "@redwoodjs/auth" "4.0.1"
+    core-js "3.27.2"
+
+"@redwoodjs/auth@4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-4.0.1.tgz#53106a2b5821a2f54c1ff0fec7b7fa9893561627"
   integrity sha512-bTpSXln4Ykc2w981ThpOJsy93Z19fvpVcMj9FfcSosFfIHvb2MWlMy4N0vCz3oVCCG/fkIPEKjI4qQnnLtozcw==
