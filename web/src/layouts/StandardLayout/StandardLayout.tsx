@@ -1,6 +1,6 @@
 import { UserButton } from '@clerk/clerk-react'
 
-import { useAuth } from '@redwoodjs/auth'
+import { useAuth } from 'src/auth'
 import { Link, routes } from '@redwoodjs/router'
 
 import './StandardLayout.css'

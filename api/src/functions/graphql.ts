@@ -1,4 +1,5 @@
 import { createGraphQLHandler } from '@redwoodjs/graphql-server'
+import { authDecoder } from '@redwoodjs/auth-clerk-api'
 
 import directives from 'src/directives/**/*.{js,ts}'
 import sdls from 'src/graphql/**/*.sdl.{js,ts}'
@@ -10,6 +11,7 @@ import { db } from 'src/lib/db'
 import { logger } from 'src/lib/logger'
 
 export const handler = createGraphQLHandler({
+  authDecoder,
   getCurrentUser,
   loggerConfig: { logger, options: {} },
   directives,
