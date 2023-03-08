@@ -10,7 +10,7 @@ const SignInPage = () => {
       <MetaTags title="Sign in" description="Sign in page" />
 
       <div className="container">
-        <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
+        <SignIn path="/sign-in" signUpUrl="/sign-up" />
       </div>
     </>
   )
