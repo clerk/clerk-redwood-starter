@@ -7,8 +7,8 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/auth-clerk-setup": "4.0.1",
-    "@redwoodjs/core": "4.0.1"
+    "@redwoodjs/auth-clerk-setup": "4.2.2",
+    "@redwoodjs/core": "4.2.2"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
