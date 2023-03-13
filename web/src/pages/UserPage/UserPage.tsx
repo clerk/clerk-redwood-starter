@@ -9,7 +9,7 @@ const UserPage = () => {
     <>
       <MetaTags title="User profile" description="User profile page" />
       <div className="container">
-        <UserProfile path="/user" routing="path" />
+        <UserProfile path="/user" />
       </div>
     </>
   )
